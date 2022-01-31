@@ -17,6 +17,23 @@
     document.querySelector('body').style.backgroundColor = 'white';
     document.querySelector('body').style.color = 'black';">
 
+
+
+
+    <input id="night_day" type="button" value="night" onclick="
+        var target = document.querySelector('body')
+        if(document.querySelector('#night_day').value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        document.querySelector('#night_day').value = 'day';
+      } else{
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          document.querySelector('#night_day').value = 'night';
+
+      }
+        ">
+
     <div id="grid">
       <ol>
         <li> <a href ="1.html"> HTML</a></li>
@@ -31,5 +48,18 @@
       </div>
     </div>
 </data>
+<input type="button" value="night" onclick="
+    if(this.value === 'night'){
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  this.value = 'day';
+  } else{
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+
+  }
+
+">
 </body>
 </html>
